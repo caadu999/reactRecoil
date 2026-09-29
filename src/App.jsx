@@ -1,6 +1,6 @@
-import { TodoForm } from "./components/TodoForm";
-import { TodoFilter } from "./components/TodoFilter";
-import { TodoList } from "./components/TodoList";
+import { TodoForm } from "./components/todoForm";
+import { TodoFilter } from "./components/todoFilter";
+import { TodoList } from "./components/todoList";
 
 export default function App() {
   return (
