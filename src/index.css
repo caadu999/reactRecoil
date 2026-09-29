@@ -1,0 +1,106 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #fff;
+  --ink: #1d2433;
+  --muted: #6b7280;
+  --line: #e3e6eb;
+  --accent: #2f5bea;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+}
+.app {
+  max-width: 520px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 16px;
+}
+.form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.form input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.form button {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.filter {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.filter .active {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.item:last-child {
+  border-bottom: 0;
+}
+.item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  cursor: pointer;
+}
+.item.done span {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+.remove {
+  color: #b42318;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+}
+.empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 24px 0;
+}
